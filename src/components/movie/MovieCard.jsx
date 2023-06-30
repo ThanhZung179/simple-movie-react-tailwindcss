@@ -1,6 +1,12 @@
 import React from 'react';
 
-const MovieCard = () => {
+const MovieCard = ({ item }) => {
+  const {
+    title,
+    vote_average,
+    release_date,
+    poster_path
+  } = item
   return (
     <div className="movie-card rounded-lg p-3 bg-slate-800 text-white">
       <img src='https://nld.mediacdn.vn/2019/4/25/3515432-endgamedek-15561710302491765206118.jpg'
