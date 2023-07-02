@@ -10,7 +10,7 @@ function App() {
         <NavLink className='text-primary'>Home</NavLink>
         <NavLink>Movie</NavLink>
       </header>
-      <section className='banner h-[400px] page-container mb-20'>
+      <section className='banner h-[700px] page-container mb-20'>
         <div className='w-full h-full rounded-lg relative'>
           <div className="overplay absolute inset-0 bg-gradient-to-t from-[rgba(0,0,0,0.5)] to-[rgba(0,0,0,0.5)]  rounded-lg "></div>
           <img src='https://nld.mediacdn.vn/2019/4/25/3515432-endgamedek-15561710302491765206118.jpg' alt='' className='w-full h-full object-cover rounded-lg' />
@@ -28,17 +28,17 @@ function App() {
       </section>
       <section className="movie-layout page-container pb-20">
         <h2 className='capitalize text-white mb-10 text-3xl font-bold'>Now Playing</h2>
-        <MovieList />
+        <MovieList type = 'now_playing' />
       </section>
 
       <section className="movie-layout page-container pb-20">
         <h2 className='capitalize text-white mb-10 text-3xl font-bold'>Top rated</h2>
-        <MovieList />
+        <MovieList type = 'top_rated'/>
       </section>
 
       <section className="movie-layout page-container pb-20">
         <h2 className='capitalize text-white mb-10 text-3xl font-bold'>Trending</h2>
-        <MovieList />
+        <MovieList type = 'popular' />
       </section>
     </>
   )
